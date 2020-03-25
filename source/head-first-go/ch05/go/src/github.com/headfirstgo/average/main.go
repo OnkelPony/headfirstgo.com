@@ -3,12 +3,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/headfirstgo/datafile"
+	"headfirstgo.com/source/head-first-go/ch05/go/src/github.com/headfirstgo/datafile"
 	"log"
 )
 
 func main() {
-	numbers, err := datafile.GetFloats("data.txt")
+	numbers, err := datafile.GetFloats("headfirstgo.com/source/head-first-go/ch05/go/bin/data.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

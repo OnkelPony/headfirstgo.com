@@ -3,6 +3,7 @@ package datafile
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 )
@@ -10,6 +11,8 @@ import (
 // GetFloats reads a float64 from each line of a file.
 func GetFloats(fileName string) ([3]float64, error) {
 	var numbers [3]float64
+	var cisilka = [4]int{1, 0, 8}
+	fmt.Println(cisilka)
 	file, err := os.Open(fileName)
 	if err != nil {
 		return numbers, err
