@@ -22,7 +22,7 @@ func main() {
 	for _, argument := range arguments {
 		number, err := strconv.ParseFloat(argument, 64)
 		if err != nil {
-			log.Fatal(err)
+			log.Fatal(err, ", vole!")
 		}
 		numbers = append(numbers, number)
 	}
