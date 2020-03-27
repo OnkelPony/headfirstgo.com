@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	lines, err := datafile.GetStrings("votes.txt")
+	lines, err := datafile.GetStrings("go/bin/votes.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
