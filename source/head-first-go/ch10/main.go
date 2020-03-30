@@ -28,6 +28,7 @@ func main() {
 	fmt.Println(event.Year())
 	fmt.Println(event.Month())
 	fmt.Println(event.Day())
+	fmt.Println(event)
 
 	err = event.SetTitle("An extremely long and impractical title")
 	if err != nil {
