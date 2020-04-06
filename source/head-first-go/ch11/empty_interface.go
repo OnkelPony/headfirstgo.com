@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
-type Whistle string
+type Whistlet string
 
-func (w Whistle) MakeSound() {
+func (w Whistlet) MakeSound() {
 	fmt.Println("Tweet!")
 }
 
 func AcceptAnything(thing interface{}) {
 	fmt.Println(thing)
-	whistle, ok := thing.(Whistle)
+	whistle, ok := thing.(Whistlet)
 	if ok {
 		whistle.MakeSound()
 	}
@@ -18,5 +18,5 @@ func AcceptAnything(thing interface{}) {
 
 func main() {
 	AcceptAnything(3.1415)
-	AcceptAnything(Whistle("Toyco Canary"))
+	AcceptAnything(Whistlet("Toyco Canary"))
 }

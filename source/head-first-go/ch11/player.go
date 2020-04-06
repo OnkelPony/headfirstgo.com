@@ -1,6 +1,9 @@
 package main
 
-import "github.com/headfirstgo/gadget"
+import (
+	"fmt"
+	"github.com/headfirstgo/gadget"
+)
 
 type Player interface {
 	Play(string)
@@ -13,6 +16,8 @@ func TryOut(player Player) {
 	recorder, ok := player.(gadget.TapeRecorder)
 	if ok {
 		recorder.Record()
+	} else {
+		fmt.Printf("player is of type %T, it can't record!", player)
 	}
 }
 
