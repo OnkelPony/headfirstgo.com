@@ -1,0 +1,16 @@
+1.
+arithmetic
+"testing"
+Test *testing.T
+Add
+t.Error
+Test *testing.T
+Subtract
+t.Error
+
+2.
+errorString(2, 1, got, want)
+errorString(4, 8, got, want)
+func errorString(a int, b int, got int, want int) string {
+    return fmtSprintf("Larger(%d, %d) = %d, want %d", a, b, got, want)
+}
