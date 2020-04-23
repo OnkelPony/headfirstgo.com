@@ -1,0 +1,13 @@
+<-
+<-
+<-
+<-
+make (chan int)
+make (chan int)
+go
+go
+<- channelA
+<- channelA
+<- channelB
+<- channelB
+

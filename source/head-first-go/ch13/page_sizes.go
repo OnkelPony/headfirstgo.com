@@ -33,7 +33,7 @@ func main() {
 	for _, url := range urls {
 		go responseSize(url, pages)
 	}
-	for i := 0; i < len(urls); i++ {
+	for _ = range urls {
 		page := <-pages
 		fmt.Printf("%s: %d\n", page.URL, page.Size)
 	}
