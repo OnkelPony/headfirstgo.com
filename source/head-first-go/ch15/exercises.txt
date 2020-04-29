@@ -1,0 +1,12 @@
+http://localhost:4567/c
+http://localhost:4567/a
+http://localhost:4567/b
+
+func()
+func()
+func(string, bool)
+passedFunction()
+string
+functionA
+functionA
+
